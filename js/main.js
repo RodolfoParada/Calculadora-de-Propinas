@@ -1,0 +1,1 @@
+// Punto de entrada y gestión del DOM
