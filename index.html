@@ -1,12 +1,60 @@
 <!-- Estructura (HTML5) -->
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="es">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
- </head>
- <body>
+    <title>Calculadora de Propinas | Pro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Calculadora de Propinas</h1>
+        
+        <form id="propina-form" class="calculator-card">
+            <div class="input-group">
+                <label for="monto">Total de la Cuenta (CLP)</label>
+                <input type="number" id="monto" placeholder="Ej: 25000" min="0">
+            </div>
+
+            <div class="input-group">
+                <label for="porcentaje">Porcentaje de Propina (%)</label>
+                <select id="porcentaje">
+                    <option value="10" selected>10% (Sugerido)</option>
+                    <option value="15">15%</option>
+                    <option value="20">20%</option>
+                    <option value="0">Sin propina</option>
+                </select>
+            </div>
     
- </body>
- </html>
+            <hr>
+
+            <div class="results-container">
+                <div class="result-item">
+                    <span>Propina Total:</span>
+                    <strong id="resultado-propina">$0</strong>
+                </div>
+                <div class="result-item highlight">
+                    <span>Total a Pagar:</span>
+                    <strong id="resultado-total">$0</strong>
+                </div>
+            </div>
+
+             <hr>
+
+            <div class="input-group">
+              <label for="personas">Dividir entre (Personas)</label>
+              <input type="number" id="personas" value="1" min="1">
+            </div>
+
+            <div class="result-item highlight">
+              <span>Cuota por Persona:</span>
+              <strong id="resultado-cuota">$0</strong>
+            </div>
+        </form>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
