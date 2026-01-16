@@ -5,7 +5,7 @@ describe('Calculadora de Propinas', () => {
     test('Calcula propina 10% de 10000', () => {
         const calc = new Calculadora(10000, 10, 1);
         expect(calc.calcularPropina()).toBe(1000);
-    });
+    }) 
 
     test('Calcula total a pagar correctamente', () => {
         const calc = new Calculadora(20000, 10, 1);

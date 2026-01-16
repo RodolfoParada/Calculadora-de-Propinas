@@ -29,11 +29,15 @@ Este proyecto consiste en una **calculadora de propinas** que permite calcular e
 npm init -y
 ```
 ### Instalar dependencias para test unitarios 
-```
+```instala solo jest
 npm install --save-dev jest
 ```
-```
+```instala solo jsdom
 npm install --save-dev jest-environment-jsdom
+
+```
+```instala jest y jsdom
+npm install --save-dev jest jest-environment-jsdom
 
 ```
 ```prueba los test
