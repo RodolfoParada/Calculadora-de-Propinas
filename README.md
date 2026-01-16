@@ -36,6 +36,9 @@ npm install --save-dev jest
 npm install --save-dev jest-environment-jsdom
 
 ```
+```prueba los test
+npm test
+```
 ### Instalar Cypres pata tests E2E
 ```
 npm install --save-dev cypress@latest
